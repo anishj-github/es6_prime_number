@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+   <title>Find Prime No</title>
+</head>
+<body>    
+   <prime-text data-id='primeTxt'></prime-text>
+   <prime-button data-text='Find' data-press='GetPrimeValue()' data-id='primeBtn'></prime-button>
+</body>
+<script src="textbox.js" type="text/javascript"></script> 
+<script src="button.js" type="text/javascript"></script>
+<script src="Prime.js" type="text/javascript"></script>
+<script>
+function GetPrimeValue(){
+let num = document.getElementById("primeTxt").value;
+new Prime(num);
+}
+</script>  
+</html>
